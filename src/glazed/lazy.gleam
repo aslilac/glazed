@@ -9,5 +9,5 @@ if erlang {
 
 if javascript {
   pub external fn unwrap(Lazy(a)) -> a =
-    "../lazy_ffi.mjs" "unwrap"
+    "../glazed_ffi.mjs" "unwrap"
 }
