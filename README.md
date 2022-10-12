@@ -16,8 +16,8 @@ const expensive_thing = Lazy(fn () {
 })
 
 fn main() {
-	expensive_thing
+  expensive_thing
   |> lazy.unwrap
-	|> io.debug
+  |> io.debug
 }
 ```
