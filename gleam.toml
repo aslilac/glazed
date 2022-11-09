@@ -3,7 +3,6 @@ version = "0.1.0"
 licences = ["MIT"]
 description = ""
 repository = { type = "github", user = "aslilac", repo = "glazed" }
-target = "javascript"
 
 [dependencies]
 gleam_stdlib = "~> 0.23"

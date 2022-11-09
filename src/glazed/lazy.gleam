@@ -3,8 +3,12 @@ pub type Lazy(a) {
 }
 
 if erlang {
-  pub external fn unwrap(Lazy(a)) -> a =
-    "glazed_ffi" "unwrap"
+  // pub external fn unwrap(Lazy(a)) -> a =
+  //   "glazed_ffi" "unwrap"
+
+  pub fn unwrap(lazy: Lazy(a)) -> a {
+    lazy.init()
+  }
 }
 
 if javascript {
